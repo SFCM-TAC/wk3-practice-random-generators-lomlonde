@@ -11,38 +11,6 @@ function Generator(choices) {
       var answer = choices[value];
       return(answer);
     }
-// method .changeDie used to select number of sides of die.  When given a number: targetSides,
-// method calculates difference between current sides and target, and adjusts accordingly using one of 2 while loops.
-    this.changeDie = function(targetSides) {
-      var diff = targetSides - (choices.length + 1);
-
-        while(diff > 0) {
-          choices.push(choices.length + 2);
-          diff--;
-
-          console.log([choices]);
-
-        }
-
-        while(diff < -1) {
-          choices.pop();
-          diff++;
-
-        console.log([choices]);
-
-        }
-
-        // if (diff > 0) {
-        //
-        //   for (i = diff; i > 0  )
-        //
-        // } else if (diff < 0 ) {
-        //
-        //
-        // }
-
-
-    }
 
     //console.log(this.value);
     //console.log(answer);
@@ -53,7 +21,7 @@ function Generator(choices) {
 // using the constructor notation and the Generator object
 // you just created
 var diceRollGenerator = new Generator([1, 2, 3, 4, 5, 6]);
-var eightBallGenerator = new Generator(["Reply hazy, try again", "Outlook not so good.", "Without a doubt.", "Signs point to yes.", "Better not tell you now.", "My sources say no.", "As I see it, yes", "Cannot predict now", "Very doubtful"]);
+var eightBallGenerator = new Generator(["Reply hazy, try again", "Outlook not so good.", "Without a doubt.", "Signs point to yes.", "Better not tell you now.", "My sources say no.", ""]);
 
 
 //console.log (diceRollGenerator);
